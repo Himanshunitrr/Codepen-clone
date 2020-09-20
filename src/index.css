@@ -18,7 +18,19 @@ body {
   flex-direction: column;
   padding: .5rem;
 }
-
+.editor-container.collapsed{
+  flex-grow: 0;
+}
+.editor-container.collapsed .CodeMirror-scroll{
+  position: absolute;
+}
+.expand-collapse-button{
+  margin-left: .6rem;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer
+}
 .editor-title{
   display: flex;
   justify-content: space-between;
